@@ -2,7 +2,7 @@ import md5 from 'md5';
 import compress from './compress';
 import adjectives from './adjectives';
 import colors from './colors';
-import animals from './animals';
+import lands from './lands';
 
 
 const toStyled = (words, style) => {
@@ -20,7 +20,7 @@ const toStyled = (words, style) => {
 
 const format = (words, style, separator) => toStyled(words, style).join(separator);
 
-const animalHash = (input, { style = 'titlecase', separator = ' ' } = {}) => {
+const landHash = (input, { style = 'titlecase', separator = ' ' } = {}) => {
   const hexdigest = md5(input);
   const pairs = hexdigest.match(/(..?)/g);
   const bytes = pairs.map(x => parseInt(x, 16));
@@ -28,10 +28,10 @@ const animalHash = (input, { style = 'titlecase', separator = ' ' } = {}) => {
 
   const adjective = adjectives[compressed[0]];
   const color = colors[compressed[1]];
-  const animal = animals[compressed[2]];
+  const land = lands[compressed[2]];
 
 
-  return format([adjective, color, animal], style, separator);
+  return format([adjective, color, land], style, separator);
 };
 
-export default animalHash;
+export default landHash;

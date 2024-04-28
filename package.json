@@ -1,7 +1,7 @@
 {
-  "name": "angry-purple-tiger",
-  "version": "1.0.5",
-  "description": "animal-based hash digests for humans",
+  "name": "sandy-yellow-mountain",
+  "version": "1.0.0",
+  "description": "land-based hash digests for humans built on purple-angry-tiger.",
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
@@ -21,14 +21,17 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helium/angry-purple-tiger.git"
+    "url": "git+https://github.com/srcfl/sandy-yellow-mountain.git"
   },
-  "author": "Andrew Allen <allenan@helium.com>",
+  "author": "Johan Leitet <johan@srcful.io>",
+  "contributors": [
+    "Andrew Allen <allenan@helium.com>"
+  ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/helium/angry-purple-tiger/issues"
+    "url": "https://github.com/srcfl/sandy-yellow-mountain/issues"
   },
-  "homepage": "https://github.com/helium/angry-purple-tiger#readme",
+  "homepage": "https://github.com/srcfl/sandy-yellow-mountain#readme",
   "dependencies": {
     "md5": "^2.2.1"
   },

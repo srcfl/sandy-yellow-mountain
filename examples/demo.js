@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
-const animalHash = require('../lib')
+const landHash = require('../lib');
 
+// eslint-disable-next-line array-callback-return
 Array.from(Array(100), () => {
-  console.log(animalHash(Math.random()))
-})
+  console.log(landHash(Math.random()));
+});
