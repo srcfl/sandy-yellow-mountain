@@ -4,7 +4,7 @@ Sandy Yellow Mountain generates land-based hash digests meant to be memorable an
 ## Example
 
 ```js
-import landHash from 'sandy-yellow-mountain';
+import landHash from '@srcful/sandy-yellow-mountain';
 
 const digest = landHash('my ugly input string');
 console.log(digest);
